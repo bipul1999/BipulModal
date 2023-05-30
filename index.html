@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="style.css" onload="this.media='all'">
+    <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+
+        <div class="content">
+            <img src="./Assets/modalapp.jpeg" alt="" loading="eager">
+            <h2>Bipul Krishan</h2>
+            <h3>Web Developer || Coding Magician</h3>
+
+            <div class="btn-grp">
+                <button class="btn-1" onclick="showWorkProfile()">
+                    <i class="fa-solid fa-share"></i>
+                    Work Profile
+                </button>
+                <button class="btn-2" onclick="showFollowMe()">
+                    Follow Me
+                </button>
+            </div>
+        </div>
+
+        <!-- Share Modal 1-->
+
+        <div class="modal-content-1">
+            <div class="container">
+                <div class="heading" >
+                    <h2> Work Profile </h2>
+                    <i class="fa-solid fa-xmark fa-xl" onclick="hideWorkProfile()"></i>
+                </div>
+                <div class="btn-grp-2">
+                    <button>
+                        <a href="https://github.com/bipul1999" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            Github 
+                        </a>
+                    </button>
+                    <button>
+                        <a href="./Assets/Resume.jpg" download="Resume.jpg">
+                            <i class="fa-regular fa-file"></i>
+                            Resume
+                        </a>
+                    </button>
+                    <!-- <button>
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Portfolio
+                        </a>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Share Modal 2-->
+        <div class="modal-content-2">
+            <div class="container">
+                <div class="heading">
+                    <h2>Follow Me</h2>
+                    <i class="fa-solid fa-xmark fa-xl" onclick="hideFollowMe()"></i>
+                </div>
+    
+                <h3>Contact Me via</h3>
+    
+                <div class="follow-link">
+    
+                    <a href="https://instagram.com/singh__bipul?igshid=MzNlNGNkZWQ4Mg==" class="icon" id="instagram" target="_blank" >
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="mailto:bipulkumarvats154@gmail.com"  class="icon" id="email" target="_blank" >
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bipul-krishan-09b712243" class="icon" id="linkedin" target="_blank" >
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://www.snapchat.com/add/bipulsingh91?share_id=-JwtxbAVhtU&locale=en-IN "class="icon" id="snapchat" target="_blank">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                    <a href="tel:9709200759" class="icon" id="call" target="_blank">
+                        <i class='fa fa-phone'></i>
+                    </a>
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+
+       
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
